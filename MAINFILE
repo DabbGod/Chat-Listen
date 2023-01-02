@@ -1,0 +1,317 @@
+local SendReport = false
+local AuthHappening = false
+
+local BlockedUsers = {}
+local BlockedUsers2 = {}
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local PlayerName = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.145185187, 0, 0.150316462, 0)
+Frame.Selectable = true
+Frame.Size = UDim2.new(0, 346, 0, 144)
+Frame.Draggable = true
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = Frame
+PlayerName.BackgroundColor3 = Color3.fromRGB(3, 3, 3)
+PlayerName.Position = UDim2.new(0.210982665, 0, 0.0486111119, 0)
+PlayerName.Size = UDim2.new(0, 200, 0, 50)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextSize = 14.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.210982665, 0, 0.548611104, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Click:Connect(function()
+	table.insert(BlockedUsers2, PlayerName.Text)
+end)
+
+local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"Loading Chat Listen V10.7",
+				"All"
+			)
+wait(4)
+local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"Made By JakeDaScripter, I am not Responsible if your account gets banned use at your own risk, All Rights Reserved Crypt Studios",
+				"All"
+			)
+			wait(4)
+			local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"Fetching Credits Then Loading Script",
+				"All"
+			)
+			wait(2.5)
+						local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[Company Chief Executive Officer, Head Developer] JakeDaScripter",
+				"All"
+			)
+			wait(2.5)
+							local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[Company Management] AustinTheDevv",
+				"All"
+			)
+		
+				wait(2.5)
+				local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[President Of The Board] oksor",
+				"All"
+			)
+		
+		wait(2.5)
+							local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[Former Chief Executive Officer] pheeranat_l",
+				"All"
+			)
+			wait(2.5)
+						local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[Company Internal Affairs Department Provides Moderation And Member Safety] oksor, JakeDaScripter, AustinTheDevv",
+				"All"
+			)
+			
+			--Legal Consultants - Provides Legal Advice
+				wait(2.5)
+						local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[Legal Consultants Provides Legal Advice/Company Defense] VannoDalton, Diego423, Syd",
+				"All"
+			)
+			wait(0.7)
+local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[Emergency Development Team Provides Assistance] PoisonDeveloper - AEST AUS, yahiathedeveloper - EETZ Egypt, AustinTheDevv - EST USA, JakeDaScripter - PST USA, 1128ozan CET Poland",
+				"All"
+			)
+			wait(2.5)
+			local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[Company Advisory Council] AustinTheDevv, JakeDaScripter, PoisonDeveloper, 1128ozan",
+				"All"
+			)
+		
+				wait(5)
+local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"Fetching script status...... please wait",
+				"All"
+			)
+			wait(2)
+			
+		local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[Message For Crypt Studios Members] We are currently developing our executer this will be free too use and we are working on a low ban rate",
+				"All"
+			)
+		wait(2)
+		local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[Script Status] UPDATED TO V10.7, [Changes] Added Lag Detection, [Developer Who Made Changes] JakeDaScripter",
+				"All"
+			)
+			wait(3)
+game:GetService("RunService").Heartbeat:connect(function(Step)
+local FrameDetection = math.round(1/Step)
+print(FrameDetection)
+
+if FrameDetection <= 34 and SendReport == false then
+    SendReport = true
+    wait(4)
+     local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[🔴LAG DETECTED SCRIPT SUSPENDED🔴] IF THIS KEEPS HAPPENING PLEASE LEAVE YOUR CURRENT SERVER THIS IS SIMPLE SERVER LAG, Heartbeat is lower than 25",
+				"All"
+			)
+			wait(2)
+			local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[🔴LAG DETECTION SYSTEM🔴] Other causes for this may be other scripts or this is simply the script giving out because of the amount of overload from the functions",
+				"All"
+			)
+			wait(2)
+			local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[🔴LAG DETECTION SYSTEM🔴] How to know if the script is giving out?, well if the messages start to appear late or barely any messages send, or dont send at all",
+				"All"
+			)
+    wait(30)
+    SendReport = false
+end
+
+
+end)
+
+for i, player in pairs(game.Players:GetChildren()) do
+
+player.Chatted:Connect(function(msg)
+    if SendReport == false and AuthHappening == false then
+local StringToDetect = "/w";
+local StringToDetect2 = "#";
+local StringToDetect3 = "ass";
+local StringToDetect4 = "fuck";
+local StringToDetect5 = "balls";
+local StringToDetect6 = "ugly";
+local StringToDetect7 = "fu";
+local StringToDetect8 = "coonSUCKmycock.com";
+local StringToDetect9 = "blackass";
+local StringToDetect10 = "slowass";
+local StringToDetect11 = "badass";
+local StringToDetect12 = "🅟u$$yAss";
+local StringToDetect13 = "DumAss";
+local StringToDetect14 = "Ni gaa";
+local StringToDetect15 = "Ni ker";
+local StringToDetect16 = "sex";
+local StringToDetect17 = "roughsexonthebedroomfloor";
+local StringToDetect18 = "SEX";
+local StringToDetect19 = "givemesomeheadplease";
+local StringToDetect20 = "TF";
+local StringToDetect21 = "tf";
+local StringToDetect22 = "T F";
+local StringToDetect23 = "sthu";
+local StringToDetect24 = "STHU";
+local StringToDetect25 = "uglyass";
+local StringToDetect26= "cum cum cumin";
+local StringToDetect27 = "crock and ball torture";
+local StringToDetect28 = "cum;o";
+local StringToDetect29 = "hail hitbler";
+local StringToDetect30 = "niger14";
+local StringToDetect31 = "cxoon";
+local StringToDetect32 = "kxxyxs";
+local StringToDetect33 = "immaSlapYouWithMyDingDong";
+local StringToDetect34 = "I beat women";
+local StringToDetect35= "GirlsGotNoRights";
+local StringToDetect36 = "lap danze";
+local StringToDetect37 = "jjFvckjj";
+local StringToDetect38 = "jjRetardjj";
+local StringToDetect39 = "jjfvcingjj jjretardjj";
+local StringToDetect40 = "jjNlGGAjj";
+local StringToDetect41 = "$h¡t";
+local StringToDetect42 = "/“ussy";
+local StringToDetect43 = "/‘’US$Y";
+local StringToDetect44 = "/-\$s";
+local StringToDetect45 = "Dumb@s$";
+local StringToDetect46 = "Ni gaa";
+local StringToDetect47 = "Ne gaa";
+local StringToDetect48 = "Ni ker";
+local StringToDetect49 = "N¡ gaa";
+local StringToDetect50 = "Knee guh";
+local StringToDetect51 = "P🎥R|\!";
+local StringToDetect52 = "P@R|\!";
+local StringToDetect53 = "3oo3s";
+local StringToDetect54 = "I3oo3s";
+local StringToDetect55 = "^|^its";
+local StringToDetect56 = "$h¡t";
+local StringToDetect57 = "Ho";
+local StringToDetect58 = "[um";
+local StringToDetect59 = "[raker";
+local StringToDetect60 = "I3eaner";
+local StringToDetect61 = "Beenexr";
+local StringToDetect62 = "MF";
+local StringToDetect63 = "Mf";
+local StringToDetect64 = "mf";
+local StringToDetect66 = "gf";
+local StringToDetect67 = "Shut Up";
+local StringToDetect68 = "shut up";
+local StringToDetect69 = "Shut up";
+local StringToDetect70 = "SHUT UP";
+local StringToDetect71 = "SHUT IT";
+local FindBlockedUser = table.find(BlockedUsers, player.Character.Name)
+local FindBlockedUser2 = table.find(BlockedUsers2, player.Character.Name)
+if string.find(string.lower(msg), string.lower(StringToDetect67)) or string.find(string.lower(msg), string.lower(StringToDetect68)) or string.find(string.lower(msg), string.lower(StringToDetect69)) or string.find(string.lower(msg), string.lower(StringToDetect70)) or string.find(string.lower(msg), string.lower(StringToDetect71)) then
+    SendReport = true
+    wait(2)
+    local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[🔴System Message🔴] YOU SHUT UP, Too "..player.Character.Name..", From Developers",
+				"All"
+			)
+			Wait(3)
+			SendReport = false
+--table.find(BlockedUsers2, player.Character.Name)
+       elseif string.find(string.lower(msg), string.lower(StringToDetect2)) or string.find(string.lower(msg), string.lower(StringToDetect3)) or string.find(string.lower(msg), string.lower(StringToDetect4)) or string.find(string.lower(msg), string.lower(StringToDetect5)) or string.find(string.lower(msg), string.lower(StringToDetect6)) or string.find(string.lower(msg), string.lower(StringToDetect7)) or string.find(string.lower(msg), string.lower(StringToDetect8)) or string.find(string.lower(msg), string.lower(StringToDetect9)) or string.find(string.lower(msg), string.lower(StringToDetect10)) or string.find(string.lower(msg), string.lower(StringToDetect11)) or string.find(string.lower(msg), string.lower(StringToDetect12)) or string.find(string.lower(msg), string.lower(StringToDetect13)) or string.find(string.lower(msg), string.lower(StringToDetect14))or string.find(string.lower(msg), string.lower(StringToDetect15))or string.find(string.lower(msg), string.lower(StringToDetect16))or string.find(string.lower(msg), string.lower(StringToDetect17))or string.find(string.lower(msg), string.lower(StringToDetect18))or string.find(string.lower(msg), string.lower(StringToDetect19))or string.find(string.lower(msg), string.lower(StringToDetect20))or string.find(string.lower(msg), string.lower(StringToDetect21))or string.find(string.lower(msg), string.lower(StringToDetect22))or string.find(string.lower(msg), string.lower(StringToDetect23))or string.find(string.lower(msg), string.lower(StringToDetect24))or string.find(string.lower(msg), string.lower(StringToDetect25))or string.find(string.lower(msg), string.lower(StringToDetect26))or string.find(string.lower(msg), string.lower(StringToDetect27))or string.find(string.lower(msg), string.lower(StringToDetect28))or string.find(string.lower(msg), string.lower(StringToDetect29))or string.find(string.lower(msg), string.lower(StringToDetect30))or string.find(string.lower(msg), string.lower(StringToDetect31))or string.find(string.lower(msg), string.lower(StringToDetect32))or string.find(string.lower(msg), string.lower(StringToDetect33))or string.find(string.lower(msg), string.lower(StringToDetect34))or string.find(string.lower(msg), string.lower(StringToDetect35))or string.find(string.lower(msg), string.lower(StringToDetect36))or string.find(string.lower(msg), string.lower(StringToDetect37))or string.find(string.lower(msg), string.lower(StringToDetect38))or string.find(string.lower(msg), string.lower(StringToDetect39))or string.find(string.lower(msg), string.lower(StringToDetect40)) or string.find(string.lower(msg), string.lower(StringToDetect41))or string.find(string.lower(msg), string.lower(StringToDetect42))or string.find(string.lower(msg), string.lower(StringToDetect43))or string.find(string.lower(msg), string.lower(StringToDetect44))or string.find(string.lower(msg), string.lower(StringToDetect45))or string.find(string.lower(msg), string.lower(StringToDetect46))or string.find(string.lower(msg), string.lower(StringToDetect47))or string.find(string.lower(msg), string.lower(StringToDetect48))or string.find(string.lower(msg), string.lower(StringToDetect49))or string.find(string.lower(msg), string.lower(StringToDetect50))then 
+local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[🔒PROTECTION SYSTEM🔒] Inappropriate Message/Tagged Detected Protected From Moderation, This May Be False, 🔒THIS USER HAS BEEN ADDED TO THE BLOCKED LIST FOR PROTECTION🔒 From "..player.Character.Name,
+				"All"
+			)
+			table.insert(BlockedUsers, player.Character.Name)
+			
+			elseif FindBlockedUser then
+
+			    local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[🔒PROTECTION SYSTEM🔒] 🔒MESSAGE BLOCKED🔒 From "..player.Character.Name.." THIS USER IS ON THE BLOCKED LIST FOR YOUR SAFETY Inappropriate Messages Were Detected",
+				"All"
+			)   
+			 wait(3)
+			 elseif FindBlockedUser2 then
+			
+			local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[🔒PROTECTION SYSTEM🔒] 🔒MESSAGE BLOCKED🔒 From "..player.Character.Name.." THIS USER IS PERMANETLY BLOCKED FOR REPEATED VIOLATIONS",
+				"All"
+			) 
+			 else
+			local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[CHAT LISTEN BY JAKEDASCRIPTER] "..msg.." From "..player.Character.Name,
+				"All"
+			) 
+			     
+			 
+		
+		end
+	
+			    
+			     
+            
+			       
+			      
+			end
+		
+			
+		
+		     
+			
+			
+
+end)
+end
+while wait(60) do
+    SendReport = true
+    wait(6)
+table.clear(BlockedUsers)
+ local SayMessageRequest2 = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+			SayMessageRequest2:FireServer(
+				"[CHAT LISTEN BY JAKEDASCRIPTER] 🔴REFRESHING BLOCKED LIST🔴 Most of the time these will be false this is for the people who were falsely blocked those who repeat will be blocked",
+				"All"
+			)
+			wait(5)
+			SendReport = false
+end
