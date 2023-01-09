@@ -304,7 +304,7 @@ infoMain:AddLabel('Pls Donate | overhaul by szze#6220')
 infoMain:AddLabel('Config saves every 10 seconds')
 
 boothTextSettings:AddInput('boothTextTextbox', {
-    Default = "✅ 1 ROBUX DONATED = 1 JUMP ✅",
+    Default = "✅ 1 ROBUX DONATED = 1 JUMP ✅                    IM A UPCOMING DEV",
     Numeric = false, 
     Finished = true,
     Text = 'Booth Text',
