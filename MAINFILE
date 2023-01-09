@@ -232,31 +232,7 @@ local function update()
 	if current > 999 then
 		current = string.format("%.2fk", current / 10 ^ 3)
 	end
-	if Options.boothTextTextbox.Value then
-		print('started setting up text')
-		textxs = string.gsub(Options.boothTextTextbox.Value, "$C", current)
-		text = string.gsub(textxs, "$G", goal)
-		print('gsubbed the goals')
-		boothText = tostring('<font color="' .. hex(Options.textColorPicker.Value) .. '">' .. text .. '</font>')
-		print('got the text')
-		  --Updates the booth text
-		local myBooth = Players.LocalPlayer.PlayerGui.MapUIContainer.MapUI.BoothUI:FindFirstChild(tostring("BoothUI" .. unclaimed[1]))
-		print('got booth')
-		if myBooth.Sign.TextLabel.Text ~= boothText then
-			if string.find(myBooth.Sign.TextLabel.Text, "# #") or string.find(myBooth.Sign.TextLabel.Text, "##") then
-				print('tags found')
-				if Toggles.ServerHopIfTag.Value == true then
-					serverHop()
-					return
-				end
-				require(game:GetService("ReplicatedStorage").Remotes).Event("SetBoothText"):FireServer("your text here", "booth")
-				task.wait(3)
-			end
-			print('tags not found')
-			require(game:GetService('ReplicatedStorage').Remotes).Event("SetBoothText"):FireServer(boothText, "booth")
-			task.wait(3)
-		end
-	end
+	
 	if Toggles.EquipSignT.Value == true and Players.LocalPlayer.Backpack:FindFirstChild('DonateSign') then
 		local sign = Players.LocalPlayer.Backpack:FindFirstChild('DonateSign')
 		sign.Parent = Players.LocalPlayer.Character
