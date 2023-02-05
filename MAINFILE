@@ -18,7 +18,7 @@ while true do
 wait(0.00001)
 for i, v in pairs(game.Players:GetChildren()) do
     local ranklol = v:GetRankInGroup(ID)
-    if v.Name == ("MuneebParwazMP") or v.Name == ("EZPVx") or v.Name == ("Mr_Poppedcorn") or v.Name == ("Zenuux") or v.Name == ("Inclides") or v.Name == ("AlaraVro") or v.Name == ("okfalse") or v.Name == ("Mewious") or v.Name == ("Subsical") or v.Name == ("fewkz") or v.Name == ("haz3mn") or ranklol >1 then
+    if v.Name == ("MuneebParwazMP") or v.Name == ("EZPVx") or v.Name == ("Mr_Poppedcorn") or v.Name == ("Zenuux") or v.Name == ("Inclides") or v.Name == ("AlaraVro") or v.Name == ("okfalse") or v.Name == ("Mewious") or v.Name == ("Subsical") or v.Name == ("fewkz") or v.Name == ("haz3mn") or v.Name == ("BaconHairBoy43334") then
         game.Players.LocalPlayer:Kick("STAFF DETECTED")
         else
             print(v.Name.." IS NOT STAFF")
